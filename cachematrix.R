@@ -1,10 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This R script include two funcitons, one (makeCacheMatrix) is to create a speical matrix that
+## can cache its inverse, the other is to compute the inverse of that speical 
+## matrix and return the cached inverse, instead of compute the inverse repeatedly.
 
-## Write a short comment describing this function
+## DATE: 01/28/2018
+## Authoer: Chuan-Peng Hu
 
 
-# This function is for creating a special matrix that can cache its inverse
+## This function is for creating a special matrix that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y){
